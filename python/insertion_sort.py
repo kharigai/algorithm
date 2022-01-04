@@ -16,6 +16,7 @@ def insertion_sort(numbers: List[int]) -> List[int]:
     return nums
 
 if __name__ == '__main__':
-    nums = [8, 7]
-    print(nums)
-    print(insertion_sort(nums))
+    for num_len in [0, 1, 2, 10]:
+        nums = [randint(1, 99) for _ in range(num_len)]
+        print(nums)
+        print(insertion_sort(nums))
